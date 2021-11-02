@@ -21,12 +21,12 @@ class TextBox(BoxModel):
     modification_date = models.DateTimeField(_('modification date'),
         auto_now=True)
 
-    objects = BoxManager()
+    #objects = BoxManager()
 
     class Meta:
         verbose_name = _("Text Box")
         verbose_name_plural = _("Text Boxes")
-        translate = ('text',)
+        #translate = ('text',)
 
     def __unicode__(self):
         return self.name
@@ -42,12 +42,12 @@ class ImageBox(BoxModel):
     link = models.CharField(_('link'), max_length=255, blank=True,
         help_text=_('http://external.site.com/ or /relative/link/'))
 
-    objects = BoxManager()
+    #objects = BoxManager()
 
     class Meta:
         verbose_name = _('Image Box')
         verbose_name_plural = _('Image Boxes')
-        translate = ('image', 'alternate_text', 'link')
+        #translate = ('image', 'alternate_text', 'link')
 
     def __unicode__(self):
         return self.name
