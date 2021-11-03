@@ -1,7 +1,7 @@
+from . import views
 from django.urls import path
-import .views
 
-pref='bento.views'
+
 urlpatterns = [
     path(r'^image-upload/$', views.image_upload, name='bento-image-import'),
     path(r'^text-upload/$', views.text_upload, name='bento-text-import'),
