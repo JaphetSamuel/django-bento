@@ -42,7 +42,7 @@ class JSONUpload(View):
             messages.success(
                 request, 'Successfully processed %s object(s).' % count
             )
-        except Exception, e:
+        except e:
             messages.error(request, 'JSON import failed: %s' % e)
         return redirect(self.get_admin_list_page(self.model_class))
 
