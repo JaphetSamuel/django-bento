@@ -26,6 +26,7 @@ class TextBox(BoxModel):
     class Meta:
         verbose_name = _("Text Box")
         verbose_name_plural = _("Text Boxes")
+        app_label = "bento"
         #translate = ('text',)
 
     def __unicode__(self):
@@ -47,6 +48,7 @@ class ImageBox(BoxModel):
     class Meta:
         verbose_name = _('Image Box')
         verbose_name_plural = _('Image Boxes')
+        app_label = "bento"
         #translate = ('image', 'alternate_text', 'link')
 
     def __unicode__(self):
